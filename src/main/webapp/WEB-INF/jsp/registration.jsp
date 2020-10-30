@@ -7,14 +7,26 @@
 </head>
 <body>
 <h1>Registration</h1>
+<style>
+
+
+    .errorblock {
+        color: #000;
+        background-color: #ffEEEE;
+        border: 3px solid #ff0000;
+        padding: 8px;
+        margin: 16px;
+    }
+</style>
 <form:form modelAttribute="registration">
+    <form:errors path="*" cssClass="errorblock" element="div"/>
     <table>
         <tr>
             <td>
-                <spring:message code="name" />
+                <spring:message code="name"/>
             </td>
             <td>
-                <form:input path="name" />
+                <form:input path="name"/>
             </td>
         </tr>
         <tr>
