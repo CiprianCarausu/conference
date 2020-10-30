@@ -33,7 +33,6 @@
 				<scope>provided</scope>
 			</dependency>
 
-
 			<dependency>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-starter-test</artifactId>
@@ -46,6 +45,10 @@
 				</exclusions>
 			</dependency>
 
+			<dependency>
+				<groupId>org.thymeleaf</groupId>
+				<artifactId>thymeleaf-spring5</artifactId>
+			</dependency>
 	</dependencies>
 
 	<build>
